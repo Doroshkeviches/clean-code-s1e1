@@ -10,12 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.main-img,
-img {
+.main-img img {
   width: 100%;
 }
-.main-img,
-.more-inf {
+.main-img .more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -45,8 +43,7 @@ img {
   h3 {
     list-style: none;
   }
-  input,
-  button {
+  input, button {
     outline: none;
   }
   button {
@@ -86,7 +83,7 @@ img {
   }
   input[type="text"]:focus {
     color: #333;
-    
+  }
   
   /* New Task */
   label[for="new-task"] {
@@ -127,11 +124,10 @@ img {
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
   }
-  button,
-  .delete,
-  img:hover {
+  button.delete img:hover {
     transform: rotateZ(0);
   }
+  
   
   /* Completed */
   ul#completed-tasks label {
@@ -140,23 +136,15 @@ img {
   }
   
   /* Edit Task */
-  ul,
-  li,
-  input[type=text] {
+  ul li input[type=text] {
     display: none;
   }
   
-  ul,
-  li,
-  .edit-mode,
-  input[type=text] {
+  ul li.edit-mode input[type=text] {
     display: inline-block;
     width: 224px;
   }
   
-  ul,
-  li,
-  .edit-mode,
-  label {
+  ul li.edit-mode label {
     display: none;
   }
